@@ -1,0 +1,38 @@
+
+
+PS C:\Users\Mike\python-scripts\src> python update-filesnames.py
+Renaming: ..\food\fruits\2019-12-24 00.32.54.028062_banana.txt to: ..\food\fruits\2019-12-24 00.32.54.028062_2019-12-24 00.32.54.028062_banana.txt
+Renaming: ..\food\fruits\2019-12-24 00.32.54.059315_blueberry.txt to: ..\food\fruits\2019-12-24 00.32.54.059315_2019-12-24 00.32.54.059315_blueberry.txt
+Renaming: ..\food\fruits\2019-12-24 00.32.54.059315_strawberry.txt to: ..\food\fruits\2019-12-24 00.32.54.059315_2019-12-24 00.32.54.059315_strawberry.txt
+Renaming: ..\food\fruits\apples\2019-12-24 00.32.54.153196_honeycrisp.txt to: ..\food\fruits\apples\2019-12-24 00.32.54.153196_2019-12-24 00.32.54.153196_honeycrisp.txt
+Renaming: ..\food\fruits\oranges\2019-12-24 00.32.54.184318_mandarin.txt to: ..\food\fruits\oranges\2019-12-24 00.32.54.184318_2019-12-24 00.32.54.184318_mandarin.txt
+Renaming: ..\food\vegetables\2019-12-24 00.32.54.215573_carrot.txt to: ..\food\vegetables\2019-12-24 00.32.54.215573_2019-12-24 00.32.54.215573_carrot.txt
+
+
+PS C:\Users\Mike\python-scripts\src> python list-directory-contents.py
+Directory: ..\food
+Subdirectory: fruits
+Subdirectory: vegetables
+
+Directory: ..\food\fruits
+Subdirectory: apples
+Subdirectory: oranges
+File: 2019-12-24 00.32.54.028062_2019-12-24 00.32.54.028062_banana.txt
+File: 2019-12-24 00.32.54.059315_2019-12-24 00.32.54.059315_blueberry.txt
+File: 2019-12-24 00.32.54.059315_2019-12-24 00.32.54.059315_strawberry.txt
+
+Directory: ..\food\fruits\apples
+File: 2019-12-24 00.32.54.153196_2019-12-24 00.32.54.153196_honeycrisp.txt
+
+Directory: ..\food\fruits\oranges
+File: 2019-12-24 00.32.54.184318_2019-12-24 00.32.54.184318_mandarin.txt.54.184318_mandarin.txt
+
+Directory: ..\food\vegetables                    .54.215573_carrot.txt
+File: 2019-12-24 00.32.54.215573_2019-12-24 00.32.54.215573_carrot.txt                            
+
+directory-contents.py > food-directory-last-modified.txt
+
+                                                 
+PS C:\Users\Mike\python-scripts\src> python list-directory-contents.py > food-directory-last-modified 
+PS C:\Users\Mike\python-scripts\src> Copy-Item "C:\Users\Mike\python-scripts\src\update-filesnames.py" -Destination "C:\Users\Mike\python-scripts\src\python_scripting_food_example"
+PS C:\Users\Mike\python-scripts\src> Copy-Item "C:\Users\Mike\python-scripts\src\food-directory-last-modified.txt" -Destination "C:\Users\Mike\python-scripts\src\python_scripting_food_example"
